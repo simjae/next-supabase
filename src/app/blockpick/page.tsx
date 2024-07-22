@@ -3,7 +3,8 @@
 import React from "react";
 import { useQuery } from "@tanstack/react-query";
 import axios from "../../lib/axios";
-import BlockpickRound from "../../components/BlockpickRound";
+import BlockpickRoundCanvas from "../../components/BlockpickRoundCanvas";
+import BlockpickRound from "@/components/BlockpickRound";
 
 interface Block {
   id: number;
@@ -37,7 +38,8 @@ const BlockpickPage: React.FC = () => {
   if (isError) return <div>Error loading blocks</div>;
 
   return (
-    <div>
+    <div className="">
+      {/* <BlockpickRoundCanvas blocks={blocks} onBlockClick={handleBlockClick} /> */}
       <BlockpickRound blocks={blocks} onBlockClick={handleBlockClick} />
       {selectedBlock && (
         <div className="fixed bottom-0 left-0 right-0 bg-white p-4 shadow-md">

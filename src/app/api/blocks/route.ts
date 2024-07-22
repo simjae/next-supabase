@@ -1,6 +1,6 @@
 import { NextRequest, NextResponse } from "next/server";
 
-let blocks = Array.from({ length: 10000 }, (_, i) => ({
+let blocks = Array.from({ length: 1000000 }, (_, i) => ({
   id: i,
   x: (i % 100) * 22,
   y: Math.floor(i / 100) * 22,

@@ -14,6 +14,7 @@
     "@types/uuid": "^10.0.0",
     "@visx/clip-path": "^3.3.0",
     "@visx/event": "^3.3.0",
+    "@visx/responsive": "^3.10.2",
     "@visx/scale": "^3.5.0",
     "@visx/shape": "^3.5.0",
     "@visx/zoom": "^3.3.0",
